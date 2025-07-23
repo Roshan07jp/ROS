@@ -128,7 +128,6 @@ dependencies:
   ffi: ^2.1.3
   
   # Additional Advanced Features
-  flutter_webview_plugin: ^0.4.0
   webview_flutter: ^4.4.4
   camera: ^0.10.5+9
   video_player: ^2.8.1
@@ -137,30 +136,18 @@ dependencies:
   flutter_colorpicker: ^1.0.3
   flutter_speed_dial: ^7.0.0
   flutter_typeahead: ^5.2.0
-  flutter_chart: ^0.1.7
   syncfusion_flutter_charts: ^23.2.7
   syncfusion_flutter_gauges: ^23.2.7
   flutter_treeview: ^1.0.7+1
-  flutter_code_editor: ^0.3.0
   highlight: ^0.7.0
   flutter_syntax_view: ^4.0.0
-  flutter_file_manager: ^1.0.0+1
-  flutter_advanced_networkimage: ^0.8.0
-  flutter_inappwebview: ^6.0.0
-  flutter_bluetooth_serial: ^0.4.0
-  flutter_nearby_connections: ^1.1.2
-  flutter_nfc_reader: ^0.3.0
-  flutter_screen_recording: ^1.1.1
   flutter_screenutil: ^5.9.0
   flutter_secure_storage: ^9.0.0
-  flutter_local_authentication: ^1.1.11
-  flutter_barcode_scanner: ^2.0.0
   speech_to_text: ^6.6.0
   flutter_tts: ^3.8.5
   file_selector: ^1.0.3
   desktop_drop: ^0.4.4
   window_manager: ^0.3.7
-  bitsdojo_window: ^0.1.6
 
 dev_dependencies:
   flutter_test:
@@ -171,6 +158,9 @@ dev_dependencies:
   build_runner: ^2.4.11
   json_serializable: ^6.8.0
   drift_dev: ^2.19.1
+  
+  # App Icon Generation
+  flutter_launcher_icons: ^0.13.1
 
 flutter:
   uses-material-design: true
@@ -217,3 +207,22 @@ flutter:
         - asset: assets/fonts/SourceCodePro-Regular.ttf
         - asset: assets/fonts/SourceCodePro-Bold.ttf
           weight: 700
+
+# App Icon Configuration
+flutter_launcher_icons:
+  android: "launcher_icon"
+  ios: true
+  image_path: "assets/icons/ros_icon.png"
+  min_sdk_android: 21
+  web:
+    generate: true
+    image_path: "assets/icons/ros_icon.png"
+    background_color: "#hexcode"
+    theme_color: "#hexcode"
+  windows:
+    generate: true
+    image_path: "assets/icons/ros_icon.png"
+    icon_size: 48
+  macos:
+    generate: true
+    image_path: "assets/icons/ros_icon.png"
