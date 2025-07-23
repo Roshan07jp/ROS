@@ -13,43 +13,164 @@ dependencies:
 
   # Core UI Framework
   cupertino_icons: ^1.0.8
+  material_design_icons_flutter: ^7.0.7296
+  flutter_svg: ^2.0.10+1
   
   # State Management
   flutter_riverpod: ^2.5.1
+  provider: ^6.1.2
+  
+  # Terminal and Process Management
+  xterm: ^3.5.0
+  process_run: ^0.14.2
+  flutter_pty: ^0.3.1
   
   # Storage and Database
   shared_preferences: ^2.2.3
   path_provider: ^2.1.3
+  sqflite: ^2.3.3+1
+  drift: ^2.19.1
   
   # HTTP and API Integration
   http: ^1.2.1
+  dio: ^5.4.3+1
+  web_socket_channel: ^2.4.5
+  
+  # AI and Chat Integration
+  chat_gpt_sdk: ^3.1.1
+  openai_dart: ^0.3.0
   
   # File Management and I/O
+  file_picker: ^8.0.6
+  open_file: ^3.3.2
+  archive: ^3.6.1
   crypto: ^3.0.3
   
   # Device Info and System
   device_info_plus: ^10.1.0
+  battery_plus: ^6.0.1
+  connectivity_plus: ^6.0.3
+  system_info2: ^4.0.0
   
   # Permissions
   permission_handler: ^11.3.1
   
   # Theme and UI Components
   flex_color_scheme: ^7.3.1
+  animated_theme_switcher: ^2.0.10
+  shimmer: ^3.0.0
   lottie: ^3.1.2
+  rive: ^0.13.1
+  
+  # Text and Syntax Highlighting
+  flutter_highlight: ^0.7.0
+  code_text_field: ^1.1.0
   
   # Terminal Fonts
   google_fonts: ^6.2.1
   
+  # Networking and Monitoring
+  network_info_plus: ^5.0.3
+  
+  # Package Management UI
+  expansion_tile_card: ^3.0.0
+  flutter_staggered_animations: ^1.1.1
+  
+  # Charts and Monitoring
+  fl_chart: ^0.68.0
+  percent_indicator: ^4.2.3
+  
+  # Gesture and Touch
+  flutter_slidable: ^3.1.0
+  swipe_to: ^1.0.6
+  
+  # Local Notifications
+  flutter_local_notifications: ^17.2.1+2
+  
+  # Image Processing
+  image: ^4.2.0
+  
+  # JSON and Serialization
+  json_annotation: ^4.9.0
+  
+  # URL Launcher
+  url_launcher: ^6.3.0
+  
+  # Share and Export
+  share_plus: ^9.0.0
+  
+  # Biometric Authentication
+  local_auth: ^2.2.0
+  
   # Screen Management
   wakelock_plus: ^1.2.5
   
+  # Audio (for terminal sounds)
+  audioplayers: ^6.0.0
+  
+  # Git Integration
+  git: ^2.3.0
+  
+  # QR Code (for SSH keys, configs)
+  qr_flutter: ^4.1.0
+  qr_code_scanner: ^1.0.1
+  
+  # Encryption
+  encrypt: ^5.0.3
+  
+  # Background Tasks
+  workmanager: ^0.5.2
+  
   # Navigation
   go_router: ^14.2.7
+  
+  # Native Integration
+  ffi: ^2.1.3
+  
+  # Additional Advanced Features
+  flutter_webview_plugin: ^0.4.0
+  webview_flutter: ^4.4.4
+  camera: ^0.10.5+9
+  video_player: ^2.8.1
+  flutter_markdown: ^0.6.18+2
+  markdown: ^7.2.2
+  flutter_colorpicker: ^1.0.3
+  flutter_speed_dial: ^7.0.0
+  flutter_typeahead: ^5.2.0
+  flutter_chart: ^0.1.7
+  syncfusion_flutter_charts: ^23.2.7
+  syncfusion_flutter_gauges: ^23.2.7
+  flutter_treeview: ^1.0.7+1
+  flutter_code_editor: ^0.3.0
+  highlight: ^0.7.0
+  flutter_syntax_view: ^4.0.0
+  flutter_file_manager: ^1.0.0+1
+  flutter_advanced_networkimage: ^0.8.0
+  flutter_inappwebview: ^6.0.0
+  flutter_bluetooth_serial: ^0.4.0
+  flutter_nearby_connections: ^1.1.2
+  flutter_nfc_reader: ^0.3.0
+  flutter_screen_recording: ^1.1.1
+  flutter_screenutil: ^5.9.0
+  flutter_secure_storage: ^9.0.0
+  flutter_local_authentication: ^1.1.11
+  flutter_barcode_scanner: ^2.0.0
+  speech_to_text: ^6.6.0
+  flutter_tts: ^3.8.5
+  file_selector: ^1.0.3
+  desktop_drop: ^0.4.4
+  window_manager: ^0.3.7
+  bitsdojo_window: ^0.1.6
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
   flutter_lints: ^4.0.0
+  
+  # Code Generation
+  build_runner: ^2.4.11
+  json_serializable: ^6.8.0
+  drift_dev: ^2.19.1
 
 flutter:
   uses-material-design: true
@@ -67,3 +188,32 @@ flutter:
     - assets/themes/
     - assets/splash/
     - assets/tutorials/
+    - assets/templates/
+    - assets/plugins/
+    - assets/tools/
+    - assets/widgets/
+    - assets/demos/
+  
+  fonts:
+    - family: JetBrainsMono
+      fonts:
+        - asset: assets/fonts/JetBrainsMono-Regular.ttf
+        - asset: assets/fonts/JetBrainsMono-Bold.ttf
+          weight: 700
+        - asset: assets/fonts/JetBrainsMono-Italic.ttf
+          style: italic
+    - family: FiraCode
+      fonts:
+        - asset: assets/fonts/FiraCode-Regular.ttf
+        - asset: assets/fonts/FiraCode-Bold.ttf
+          weight: 700
+    - family: HackNerdFont
+      fonts:
+        - asset: assets/fonts/Hack-Regular.ttf
+        - asset: assets/fonts/Hack-Bold.ttf
+          weight: 700
+    - family: SourceCodePro
+      fonts:
+        - asset: assets/fonts/SourceCodePro-Regular.ttf
+        - asset: assets/fonts/SourceCodePro-Bold.ttf
+          weight: 700
